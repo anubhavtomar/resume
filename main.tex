@@ -1,0 +1,261 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \namesection{Anubhav}{Tomar}{
+\namesection{}{Anubhav Tomar}{
+% \urlstyle{same}\url{https://github.com/andypillay} \\
+Interest Areas: Web Development, Cloud/Distributed Systems, Embedded Systems, Software Engineering\\
++1-(631)-428-8874 | \href{mailto:anubhav.tomar94@gmail.com}{\color{blue}anubhav.tomar94@gmail.com} | \href{https://anubhavtomar.github.io}{\color{blue}anubhavtomar.github.io} | \href{https://www.linkedin.com/in/anubhav-tomar/}{\color{blue}linkedin@anubhav-tomar} | \href{https://github.com/anubhavtomar}{\color{blue}github@anubhavtomar}
+}
+
+% \href{uk.linkedin.com/in/andypillay}{uk.linkedin.com/in/andypillay}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical Skills}
+\descbold{JavaScript, Python, SystemC, Assembly, C++, Perl, Ruby, C, HTML5, CSS3, Tcl/Tk, Scripting | NodeJS, AngularJS, EmberJS, MeteorJS, OpenCV, TensorFlow, RoR, Flask, MVC, jQuery, Bootstrap, Android(Kotlin), Cordova, Grunt, NS2 | Git, JIRA, LaTex, Agile}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+\runsubsection{Stony Brook University}
+\descript{| M.S. Computer Engineering}
+\hfill
+\location{GPA: 3.58/4.00 | Aug 2018 – Dec 2019}\\
+\descbold{Coursework:} Analysis of Algorithms, Computer Vision, Cyber-Physical Systems, Digital System Specification and Modeling, Hardware-Software Co-Design of Embedded Systems, Wireless Network, Computer-Aided Design, Modern Sensors.\\
+\sectionsep
+\runsubsection{NSIT (University of Delhi)}
+\descript{| B.E. Control Engineering}
+\hfill
+\location{GPA: 7.46/10.00 | Aug-2011 - May 2015}\\
+\descbold{Coursework:} Computer Networks, Computer Graphics, Data Structures, Microprocessors, Digital Signal Processing.
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Stony Brook University}
+\descript{| Graduate Teaching Assistant}
+\hfill
+\location{ Spring 2019 | Stony Brook, NY}\\
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Serving as a Teaching Assistant and grader for the undergraduate course - ESE 344 Software Techniques for Engineers (C++ programming) under Prof. Murali Subbarao.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Homebell}
+\descript{| Software Engineer}
+\hfill
+\location{ Mar 2017 – Aug 2018 | Noida, India}\\
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item \descbold{Emma:} Designed \& developed a SaaS for subcontractor companies in Germany using AngularJS 2 and RoR.
+\item Responsible for frontend (AngularJS) and backend (RoR) for feature development across different products.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Oravel Stays (OYO)}
+\descript{| Software Engineer}
+\hfill
+\location{ Mar 2016 – Mar 2017 | Gurugram, India}\\
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item \descbold{Owner App:} Built a hybrid application using EmberJS, Cordova on front-end \& RoR on back-end. Used by OYO owners.
+\item \descbold{Lifeline:} Designed \& developed internal web portal. Used by customer service center and administrators.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{TravelClinic}
+\descript{| Software Intern}
+\hfill
+\location{ Oct 2015 – Mar 2016 | Noida, India}\\
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Designed \& developed a social networking web application from scratch using MeteorJS.\descbold{ Features:} Recommendations for the nearby restaurants and events, Chat, \& 2 player Tic-Tac-Toe game.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Defense R\&D Organisation, Govt. of India}
+\descript{| Summer Intern}
+\hfill
+\location{ Summer 2014 | Hyderabad, India}\\
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Built a GUI using Python for serially communicating (RS 232 channel) with Altimeter and proprietary GPS Receiver. The data is used for evaluation and calibration of the Altimeter.
+\end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{RISC Processor Architecture with 5-Stage Pipeline Execution}
+\descbold{| SystemC}
+\hfill
+\location{\href{https://github.com/anubhavtomar/ESE501}{\color{blue}github@ESE501}}\\
+RTL Level Modeling of a 16-bit RISC Processor. 5 stages: Instruction Fetch, Decode, ALU/EXE, Memory Access \& Write Back.
+\sectionsep
+
+\runsubsection{Gesture Recognition using Acoustics}
+\hfill
+\location{\href{https://github.com/anubhavtomar/gesture-app}{\color{blue}github@gesture-app}}\\
+\descbold{Android, Deep Learning, CNN, Tensor Flow, Python, Flask, Signal Processing}\\
+An Android application for detecting hand gestures ('Open Fist' / 'Closed Fist') using high-frequency acoustic waves.
+\sectionsep
+
+\runsubsection{Sound Controlled Stopwatch}
+\descbold{| PSoC1, Assembly}
+\hfill
+\location{\href{https://github.com/anubhavtomar/psoc-stopwatch}{\color{blue}github@psoc-stopwatch}}\\
+An implementation of a Stopwatch on PSoC1. The stopwatch works for Sound inputs and Push Button inputs.
+\sectionsep
+
+\runsubsection{Simulated Annealing Algorithm in Mixed Signal Processing}
+\descbold{| C++, Perl}
+\hfill
+\location{\href{https://github.com/anubhavtomar/annealing-partitioning}{\color{blue}github@annealing-partitioning}}\\
+An implementation of \location{\href{https://link.springer.com/article/10.1023/A:1008857008151}{\color{blue}Hardware/Software Partitioning
+based on Simulated Annealing}} for Fast Fourier Transform (FFT).
+\sectionsep
+
+\runsubsection{Simulation of Routing algorithms for VANET}
+\descbold{| Tcl/Tk, NS2}
+\hfill
+\location{B.E Final Year Project}\\
+Simulated VANET routing protocols AODV (Ad Hoc On-Demand Distance Vector) and DSDV(Destination-Sequenced Distance-Vector Routing) using Network Simulator (NS2) for an on-demand Traffic communication.
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACHIEVEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{ACHIEVEMENTS \& EXTRACURRICULAR}
+% \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+% \descbold{Professional} & OYO-Person of Contact, Owner App\\
+% & Defense R\&D Organisation-Project Head in a team size of 4\\
+% \descbold{Online Courses} & Machine Learning A-Z\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Skills}
+% \begin{minipage}[t]{.6\textwidth}
+% \subsection{Languages}
+% \location{Proficient:}
+% C\# \textbullet{} Python \textbullet{} CSS \textbullet{} HTML \textbullet{} MSSQL \\ 
+% \location{Familiar/Studying:}
+% JavaScript \textbullet{} Scala \textbullet{} C++ 
+% \sectionsep
+% \end{minipage}
+% \hfill
+% \begin{minipage}[t]{.35\textwidth}
+% \subsection{Spoken \& Written}
+% \location{Native fluency:} English\\
+% \location{Working proficiency:} French Creolé\\
+% \end{minipage}
+
+% \begin{minipage}[t]{.6\textwidth}
+% \subsection{Frameworks }
+% .NET \textbullet{} jQuery \textbullet{} Bootstrap \textbullet{} Django \textbullet{} Entity\\
+% \end{minipage}
+% \hfill
+% \begin{minipage}[t]{.35\textwidth}
+% \subsection{Software / Version Control}
+% Terminal \textbullet{} Git \textbullet{} Team Foundation Server \\ 
+% \end{minipage}
+% \hfill
+
+% \begin{minipage}[t]{.6\textwidth}
+% \subsection{Methodologies / Practices }
+% Agile \textbullet{} Scrum \textbullet{} Test Driven Development \\
+% \end{minipage}
+% \hfill
+% \begin{minipage}[t]{.35\textwidth}
+% \subsection{IDE's / Text Editors }
+% Visual Studio \textbullet{} Sublime Text \textbullet{} Notepad++ \\ 
+% \end{minipage}
+
+\vfill
+Last Updated on \today
+\hfill 
+Visa Status: F1 Holder
+% \lastupdated
+\end{document}  
+
+\documentclass[]{article}
