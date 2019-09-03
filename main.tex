@@ -2,15 +2,15 @@
 % This is a modified ONE COLUMN version of
 % the following template:
 % 
-% One Page Two Column Resume
+% Deedy - One Page Two Column Resume
 % LaTeX Template
 % Version 1.1 (30/4/2014)
 %
 % Original author:
-% Anubhav Tomar (http://anubhavtomar.github.io)
+% Debarghya Das (http://debarghyadas.com)
 %
 % Original repository:
-% https://github.com/anubhavtomar/resume
+% https://github.com/deedydas/Deedy-Resume
 %
 % IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
 %
@@ -79,8 +79,8 @@ Interest Areas: Web Development, Cloud/Distributed Systems, Embedded Systems, So
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Technical Skills}
-\descbold{JavaScript, Python, SystemC, Assembly, C++, Perl, Ruby, C, HTML5, CSS3, Tcl/Tk, Scripting | NodeJS, AngularJS, EmberJS, MeteorJS, OpenCV, TensorFlow, RoR, Flask, MVC, jQuery, Bootstrap, Android(Kotlin), Cordova, Grunt, NS2 | Git, JIRA, LaTex, Agile}
-\sectionsep
+\descbold{Java, JavaScript, Python, SystemC, Assembly, C++, Perl, Ruby, C, HTML5, CSS3, Tcl/Tk, Scripting | Amazon Redshift, NodeJS, AngularJS, EmberJS, MeteorJS, OpenCV, TensorFlow, RoR, Flask, MVC, jQuery, Bootstrap, Android(Kotlin), Cordova, Grunt, NS2 | Git, JIRA, LaTex, Agile}
+% \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
@@ -90,9 +90,9 @@ Interest Areas: Web Development, Cloud/Distributed Systems, Embedded Systems, So
 \runsubsection{Stony Brook University}
 \descript{| M.S. Computer Engineering}
 \hfill
-\location{GPA: 3.58/4.00 | Aug 2018 – Dec 2019}\\
+\location{GPA: 3.59/4.00 | Aug 2018 – Dec 2019}\\
 \descbold{Coursework:} Analysis of Algorithms, Computer Vision, Cyber-Physical Systems, Digital System Specification and Modeling, Hardware-Software Co-Design of Embedded Systems, Wireless Network, Computer-Aided Design, Modern Sensors.\\
-\sectionsep
+% \sectionsep
 \runsubsection{NSIT (University of Delhi)}
 \descript{| B.E. Control Engineering}
 \hfill
@@ -105,15 +105,27 @@ Interest Areas: Web Development, Cloud/Distributed Systems, Embedded Systems, So
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
+\runsubsection{Amazon Web Services}
+\descript{| SDE Intern | Team: Elastic Block Store (EBS)}
+\hfill
+\location{ Summer 2019 | Seattle, WA}\\
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item \descbold{Primary Goal:} Implemented Redshift Query Helper abstracting complexities for querying EBS snapshots metadata.
+\item \descbold{Stretch Goal:} Implemented a simple and easy-to-use CLI tool for querying EBS snapshots metadata.
+\item Query time reduced by 30 sec (approx.) when compared to existing solution.
+\end{tightemize}
+% \sectionsep
+
 \runsubsection{Stony Brook University}
 \descript{| Graduate Teaching Assistant}
 \hfill
 \location{ Spring 2019 | Stony Brook, NY}\\
 % \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Serving as a Teaching Assistant and grader for the undergraduate course - ESE 344 Software Techniques for Engineers (C++ programming) under Prof. Murali Subbarao.
+\item Served as a Teaching Assistant and grader for the undergraduate course - ESE 344 Software Techniques for Engineers (Data Structures in C++) under Prof. Murali Subbarao.
 \end{tightemize}
-\sectionsep
+% \sectionsep
 
 \runsubsection{Homebell}
 \descript{| Software Engineer}
@@ -124,7 +136,7 @@ Interest Areas: Web Development, Cloud/Distributed Systems, Embedded Systems, So
 \item \descbold{Emma:} Designed \& developed a SaaS for subcontractor companies in Germany using AngularJS 2 and RoR.
 \item Responsible for frontend (AngularJS) and backend (RoR) for feature development across different products.
 \end{tightemize}
-\sectionsep
+% \sectionsep
 
 \runsubsection{Oravel Stays (OYO)}
 \descript{| Software Engineer}
@@ -135,7 +147,7 @@ Interest Areas: Web Development, Cloud/Distributed Systems, Embedded Systems, So
 \item \descbold{Owner App:} Built a hybrid application using EmberJS, Cordova on front-end \& RoR on back-end. Used by OYO owners.
 \item \descbold{Lifeline:} Designed \& developed internal web portal. Used by customer service center and administrators.
 \end{tightemize}
-\sectionsep
+% \sectionsep
 
 \runsubsection{TravelClinic}
 \descript{| Software Intern}
@@ -145,7 +157,7 @@ Interest Areas: Web Development, Cloud/Distributed Systems, Embedded Systems, So
 \begin{tightemize}
 \item Designed \& developed a social networking web application from scratch using MeteorJS.\descbold{ Features:} Recommendations for the nearby restaurants and events, Chat, \& 2 player Tic-Tac-Toe game.
 \end{tightemize}
-\sectionsep
+% \sectionsep
 
 \runsubsection{Defense R\&D Organisation, Govt. of India}
 \descript{| Summer Intern}
@@ -162,26 +174,40 @@ Interest Areas: Web Development, Cloud/Distributed Systems, Embedded Systems, So
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Projects}
+\runsubsection{Gaze Behavior Monitoring System}
+\descbold{| SystemC}
+\hfill
+\location{\href{https://github.com/anubhavtomar/ESE501}{\color{blue}github@ESE501}}\\
+Modeling a duplex communication between 2 mobiles \& centralized server. Transmitting images for broadcasting on mobiles.
+% \sectionsep
+
+\runsubsection{Robot Navigation in Confined Areas}
+\descbold{| SystemC}
+\hfill
+\location{\href{https://github.com/anubhavtomar/ESE501}{\color{blue}github@ESE501}}\\
+Modeling of robot navigation in a 2D grid. The robots are capable of localizing itself within the confined area and detect any unexpected obstacles with their own proximity sensors.
+% \sectionsep
+
 \runsubsection{RISC Processor Architecture with 5-Stage Pipeline Execution}
 \descbold{| SystemC}
 \hfill
 \location{\href{https://github.com/anubhavtomar/ESE501}{\color{blue}github@ESE501}}\\
 RTL Level Modeling of a 16-bit RISC Processor. 5 stages: Instruction Fetch, Decode, ALU/EXE, Memory Access \& Write Back.
-\sectionsep
+% \sectionsep
 
 \runsubsection{Gesture Recognition using Acoustics}
 \hfill
 \location{\href{https://github.com/anubhavtomar/gesture-app}{\color{blue}github@gesture-app}}\\
 \descbold{Android, Deep Learning, CNN, Tensor Flow, Python, Flask, Signal Processing}\\
 An Android application for detecting hand gestures ('Open Fist' / 'Closed Fist') using high-frequency acoustic waves.
-\sectionsep
+% \sectionsep
 
 \runsubsection{Sound Controlled Stopwatch}
 \descbold{| PSoC1, Assembly}
 \hfill
 \location{\href{https://github.com/anubhavtomar/psoc-stopwatch}{\color{blue}github@psoc-stopwatch}}\\
 An implementation of a Stopwatch on PSoC1. The stopwatch works for Sound inputs and Push Button inputs.
-\sectionsep
+% \sectionsep
 
 \runsubsection{Simulated Annealing Algorithm in Mixed Signal Processing}
 \descbold{| C++, Perl}
@@ -189,13 +215,13 @@ An implementation of a Stopwatch on PSoC1. The stopwatch works for Sound inputs 
 \location{\href{https://github.com/anubhavtomar/annealing-partitioning}{\color{blue}github@annealing-partitioning}}\\
 An implementation of \location{\href{https://link.springer.com/article/10.1023/A:1008857008151}{\color{blue}Hardware/Software Partitioning
 based on Simulated Annealing}} for Fast Fourier Transform (FFT).
-\sectionsep
+% \sectionsep
 
-\runsubsection{Simulation of Routing algorithms for VANET}
-\descbold{| Tcl/Tk, NS2}
-\hfill
-\location{B.E Final Year Project}\\
-Simulated VANET routing protocols AODV (Ad Hoc On-Demand Distance Vector) and DSDV(Destination-Sequenced Distance-Vector Routing) using Network Simulator (NS2) for an on-demand Traffic communication.
+% \runsubsection{Simulation of Routing algorithms for VANET}
+% \descbold{| Tcl/Tk, NS2}
+% \hfill
+% \location{B.E Final Year Project}\\
+% Simulated VANET routing protocols AODV (Ad Hoc On-Demand Distance Vector) and DSDV(Destination-Sequenced Distance-Vector Routing) using Network Simulator (NS2) for an on-demand Traffic communication.
 % \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
